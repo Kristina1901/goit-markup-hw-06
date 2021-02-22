@@ -40,9 +40,54 @@
           <svg class="modal-icone"> 
             <use href="./svg/symbol-defs-c.svg#icon-close-black-18dp-2-1-1" width="18" height="18"></use>
             </svg> 
-         </button>  
+         </button> 
+         <form action="#" class="modal-form">
+          <div class="wrapper-modal" >
+          <label class="modal-form-input-label">
+            <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
+              Имя
+              <span class="modal-form-input-wrapper">
+                <svg class="modal-icons">
+              <use href="./svg/symbol-defs-m.svg#icon-person-black-18dp-1-1" width="18" height="18"> </use>
+              </svg>
+              <input type="text" name="user-name" class="modal-form-input">
+              </span>
+          </label>
+
+          <label class="modal-form-input-label">
+              Телефон
+              <span class="modal-form-input-wrapper">
+                <svg class="modal-icons">
+                  <use href="./svg/symbol-defs-m.svg#icon-Vector-3-1" width="18" height="18"> </use>
+                  </svg>
+                  <input type="tel" name="user-phone" class="modal-form-input">
+              </span>
+          </label>
+          <label class="modal-form-input-label">
+            Почта
+            <span class="modal-form-input-wrapper">
+              <svg class="modal-icons">
+                <use href="./svg/symbol-defs-m.svg#icon-Vector-4-1" width="18" height="18"> </use>
+                </svg>
+                <input type="mail" name="user-mail" class="modal-form-input">
+            </span>
+        </label>
+
+          <label class="modal-form-input-label">
+              Комментарий
+              <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+          </label>
+          <input type="checkbox" name="user-policy" id="policy-check"
+              class=" modal-form-check-policy visually-hidden">
+          <label for="policy-check" class="modal-form-label-policy">
+             Соглашаюсь с рассылкой и принимаю 
+            <a href="" class="link-modal">Условия
+                  договора</a> </label>
+            </div>
+            <button type="submit" class="modal-form-btn">Отправить</button>
+          </div>
+      </form> 
          </div> 
-        </div>
       </section>
       <section class="advantages">
         <ul class="advantages-list">
@@ -96,11 +141,11 @@
         <h2 class="specialization-header">Чем мы занимаемся</h2>
         <ul class="specialization-list">
           <li class="specialization-item"><img src="./img/computer.jpg" alt="computer" width="370" />
-          <p class="label">Десктопные приложения</p> </li>
+          <p class="label-specialization">Десктопные приложения</p> </li>
           <li class="specialization-item"><img src="./img/phone.jpg" alt="phone" width="370" />
-          <p class="label">Мобильные приложения </p></li>
+          <p class="label-specialization">Мобильные приложения </p></li>
           <li class="specialization-item"><img src="./img/tablet.jpg" alt="tablet" width="370" />
-          <p class="label">Дизайнерские решения </p></li>
+          <p class="label-specialization">Дизайнерские решения </p></li>
           </ul>
       </section>
       <section class="our-team">
@@ -324,6 +369,19 @@
           </a>
           </li> 
           </ul> 
+          </div>
+          <div class="subscribe">
+          <p>Подпишитесь на рассылку</p> 
+          <form>
+            <label>
+            <input type="email" placeholder="E-mail" class="footer-submit-input" name="user-email" required/>
+          </label>
+            <button class="btn-subscribe" type="submit">Подписаться 
+               <svg class="contact-icons-footer-subcribe">
+                <use href="./svg/symbol-defs-mt.svg#icon-icon-send-2" width="24" height="24"> </use>
+                </svg>
+            </button>
+          </form>
           </div>
         </div>
      </footer>
