@@ -1043,8 +1043,9 @@ img {
         position: absolute;
         width: 11px;
         height: 8px;
-        left: 4px;
-        bottom: 12px;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
         }
     .modal-form-label-policy {
         font-family: Roboto;
