@@ -276,10 +276,10 @@ img {
      justify-content: center;
      align-items: center;
      }
-    .modal-icone {
+     .modal-icone {
         fill: var(--main-color);
-        width: 18px;
-        height: 18px;
+        width: 12px;
+        height: 12px;
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -287,7 +287,7 @@ img {
     .modal-button:focus .modal-icone,
     .modal-button:hover .modal-icone {
        fill: var(--accent-color);
-    } 
+    }    
     /*finish of hero*/
     .advantages {
         padding-top: 94px;
@@ -748,13 +748,14 @@ img {
     .contact-icons-footer-subcribe {
         width: 24px;
         height: 24px;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%)
         position: absolute;
-      }
+        margin-left: 10px;
+        top: 30%;
+        translateY(-30%);
+        }
     .btn-subscribe {
         min-width: 200px;
+        position: relative;
         background-color: var(--accent-color);
         box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
         border: none;
@@ -967,9 +968,21 @@ img {
         cursor: pointer;
         margin-top: 5px;
       }
+      .modal-form-input-icon {
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 15px;
+        height: 12px;
+        cursor: pointer;
+    }
+    .modal-form-input-wrapper:hover .modal-form-input-icon  {
+       fill: var(--accent-color);
+    }    
       
-      .modal-form-input:focus + .modal-form-icon {
-        background-color: var(--accent-color);
+      .modal-form-input-wrapper:focus + .modal-form-input-icon {
+        fill: var(--accent-color);
       }
       
       .modal-form-input:focus {
@@ -996,6 +1009,7 @@ img {
         outline: none;
         border-color: var(--accent-color);
       }
+    
       
       .modal-form-message::placeholder {
         color: rgba(117, 117, 117, 0.5);
@@ -1004,7 +1018,6 @@ img {
       .modal-form-message:focus::placeholder {
         color: var(--accent-color);
       }
-      
     .modal-form-btn {
        padding-top: 10px;
        padding-bottom: 10px;
@@ -1025,28 +1038,6 @@ img {
     .link-modal {
         color: var(--accent-color);
         text-decoration: underline;
-    }
-    .modal-icons {
-        position: absolute;
-        left: 2%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 18px;
-        height: 18px;
-        fill: var(--main-color);
-    }
-    .modal-form-input-wrapper:focus .modal-icons,
-    .modal-form-input-wrapper:hover .modal-icons  {
-       fill: var(--accent-color);
-    }  
-    .modal-icons-chek {
-        position: absolute;
-        width: 11px;
-        height: 8px;
-        left: 1%;
-        right: 50%;
-        bottom: 1,257%;
-        transform: translateY(50%);
     }
     .modal-form-label-policy {
         font-family: Roboto;
@@ -1070,7 +1061,10 @@ img {
         background-color: var(--accent-color);
         border-radius: 2px;
         border: none;
-        background-image: url(../svg/symbol-defs-mc.svg);}
+        background-image: url(../img/Vector\ \(8\).svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     .wrapper-modal {
         position: relative;
     }    
