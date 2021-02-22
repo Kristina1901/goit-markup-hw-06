@@ -284,9 +284,9 @@ img {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        }
-    .modal-icone:hover,
-    .modal-icone:focus {
-        fill: var(--accent-color);
+    .modal-button:focus .modal-icone,
+    .modal-button:hover .modal-icone {
+       fill: var(--accent-color);
     } 
     /*finish of hero*/
     .advantages {
@@ -1043,10 +1043,10 @@ img {
         position: absolute;
         width: 11px;
         height: 8px;
-        left: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        }
+        left: 1%;
+        bottom: 1,257%;
+        transform: translateY(35%);
+      }
     .modal-form-label-policy {
         font-family: Roboto;
         font-size: 14px;
@@ -1070,6 +1070,9 @@ img {
         border-radius: 2px;
         border: none;
         background-image: url(../svg/symbol-defs-mc.svg);}
+    .wrapper-modal {
+        position: relative;
+    }    
     
     
    
