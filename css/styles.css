@@ -268,8 +268,6 @@ img {
      border-radius: 50px;
      top: 8px;
      right: 8px;
-     margin-left: 11px;
-     margin-bottom: 11px;
      border: 1px solid rgba(0, 0, 0, 0.1);
      background-color: var(--active-color);
      display: flex;
@@ -977,13 +975,9 @@ img {
         height: 12px;
         cursor: pointer;
     }
-    .modal-form-input-wrapper:hover .modal-form-input-icon  {
-       fill: var(--accent-color);
-    }    
-      
-      .modal-form-input-wrapper:focus + .modal-form-input-icon {
+    .modal-form-input:focus + .modal-form-input-icon {
         fill: var(--accent-color);
-      }
+    }
       
       .modal-form-input:focus {
         outline: none;
@@ -1057,17 +1051,21 @@ img {
         content: "";
         cursor: pointer;
     }
-    .modal-form-check-policy:checked + .modal-form-label-policy::before {
+     .modal-form-check-policy:checked + .modal-form-label-policy::before {
         background-color: var(--accent-color);
         border-radius: 2px;
         border: none;
         background-image: url(../img/Vector\ \(8\).svg);
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: 50% 50%;
     }
     .wrapper-modal {
         position: relative;
-    }    
+    } 
+    .modal-form-check-policy:focus + .modal-form-label-policy::before {
+        outline: 2px solid #212121;
+    }
     
     
    

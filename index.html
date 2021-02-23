@@ -340,34 +340,34 @@
       </button> 
       <form action="#" class="modal-form">
        <div class="wrapper-modal" >
+        <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
        <label class="modal-form-input-label">
-         <p class="modal-header">Оставьте свои данные, мы вам перезвоним</p>
-           Имя
+             Имя
            <span class="modal-form-input-wrapper">
+            <input type="text" name="user-name" class="modal-form-input">
              <svg class="modal-form-input-icon">
            <use href="./svg/symbol-defs-m.svg#icon-person-black-18dp-1-1" width="15" height="12"> </use>
            </svg>
-           <input type="text" name="user-name" class="modal-form-input">
            </span>
        </label>
 
        <label class="modal-form-input-label">
            Телефон
            <span class="modal-form-input-wrapper">
+            <input type="tel" name="user-phone" class="modal-form-input">
              <svg class="modal-form-input-icon">
                <use href="./svg/symbol-defs-m.svg#icon-Vector-3-1" width="15" height="12"> </use>
                </svg>
-               <input type="tel" name="user-phone" class="modal-form-input">
-           </span>
+               </span>
        </label>
        <label class="modal-form-input-label">
          Почта
          <span class="modal-form-input-wrapper">
+          <input type="mail" name="user-mail" class="modal-form-input">
            <svg class="modal-form-input-icon">
              <use href="./svg/symbol-defs-m.svg#icon-Vector-4-1" width="15" height="12"> </use>
              </svg>
-             <input type="mail" name="user-mail" class="modal-form-input">
-         </span>
+            </span>
      </label>
 
        <label class="modal-form-input-label">
@@ -379,7 +379,8 @@
        <label for="policy-check" class="modal-form-label-policy">
          Соглашаюсь с рассылкой и принимаю 
          <a href="" class="link-modal">Условия
-               договора</a> </label>
+               договора</a> 
+        </label>
          </div>
          <button type="submit" class="modal-form-btn">Отправить</button>
        </div>
